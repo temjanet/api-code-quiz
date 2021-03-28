@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
+    background: #007bff;
+}
+
+::selection {
+    color: #ffffff;
     background: #007bff;
 }
 
@@ -19,7 +24,6 @@ body {
     transform: translate(-50%, -50%);
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
                 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: all 0.3s ease;
 }
 
 .info_box.activeInfo,
@@ -53,7 +57,7 @@ body {
     transform: all 0.3s ease;
 }
 
-.info_box .info_title {
+.info_box .info-title {
     height: 60px;
     width: 100%;
     border-bottom: 1px solid lightgrey;
@@ -64,16 +68,16 @@ body {
     font-weight: 600;
 }
 
-.info_box .info_list {
+.info_box .info-list {
     padding: 15px 30px;
 }
 
-.info_box .info_list .info {
+.info_box .info-list .info {
     margin:  5px 0;
     font-size: 17px;
 }
 
-.info_box .info_list .info span {
+.info_box .info-list .info span {
     font-weight: 600;
     color: #007bff;
 }
@@ -185,6 +189,11 @@ body {
     left: 0px;
     height: 3px;
     background: #007bff;
+}
+
+section {
+    padding: 25px 30px 20px 30px;
+    background: #ffffff;
 }
 
 section .que_text {
@@ -343,11 +352,6 @@ footer button.show {
     margin: 10px 0;
     font-size: 18px;
     font-weight: 500;
-}
-
-.score_text span p {
-    font-weight: 600;
-    padding: 0 4px;
 }
 
 .result_box .buttons {
